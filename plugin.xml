@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="OpenQQPlugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>OpenQQPlugin</name>
+	<DESCRIPTION>YuRi</DESCRIPTION>
+	<js-module name="OpenQQPlugin" src="www/OpenQQPlugin.js">
+		<clobbers target="OpenQQPlugin" />
+	</js-module>
+	    <platform name="android">
+	    	<config-file parent="/*" target="res/xml/config.xml">
+	    		<feature name="OpenQQPlugin">
+	    			<param name="android-package" value="OpenQQPlugin.OpenQQPlugin" />
+	    		</feature>
+	    	</config-file>
+	    	<source-file src="src/android/OpenQQPlugin.java" target-dir="src/OpenQQPlugin" />
+	    </platform>
+	</plugin>
